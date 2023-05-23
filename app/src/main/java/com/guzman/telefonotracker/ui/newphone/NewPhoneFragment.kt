@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.guzman.telefonotracker.R
 import com.guzman.telefonotracker.databinding.FragmentNewPhoneBinding
 import com.guzman.telefonotracker.ui.viewmodel.PhoneViewModel
 
@@ -41,7 +40,7 @@ class NewPhoneFragment : Fragment() {
 
     private fun onCreatePhone(){
         binding.actionAddPhone.setOnClickListener {
-            viewModel.CreatePhone()
+            viewModel.createPhone()
             findNavController().popBackStack()
         }
     }

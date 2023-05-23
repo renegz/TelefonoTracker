@@ -19,7 +19,7 @@ class PhoneViewModel(private val repositoryTelefono: RepositoryTelefono): ViewMo
 
     private fun addPhone(newPhone: TelefonoModel) = repositoryTelefono.addTelefono(newPhone)
 
-    fun CreatePhone(){
+    fun createPhone(){
         val newPhone = TelefonoModel(
             marca.value.toString(),
             modelo.value.toString()
@@ -34,7 +34,7 @@ class PhoneViewModel(private val repositoryTelefono: RepositoryTelefono): ViewMo
         modelo.value = ""
     }
 
-    fun SetSelectedPhone(phone: TelefonoModel){
+    fun setSelectedPhone(phone: TelefonoModel){
         marca.value = phone.marca
         modelo.value = phone.modelo
     }
