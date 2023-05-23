@@ -5,4 +5,6 @@
     <string name="hint_phone_brand">Marca del telefono</string>
     <string name="hint_phone_model">Modelo del telefono</string>
     <string name="add_phone">Agregar telefono</string>
+    <string name="phones_text">Telefonos</string>
+    <string name="fab_content_description">Boton que nageva hacia agregar un telefono</string>
 </resources>
