@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/phonesFragment">
+
+    <fragment
+        android:id="@+id/phonesFragment"
+        android:name="com.guzman.telefonotracker.PhonesFragment"
+        android:label="fragment_phones"
+        tools:layout="@layout/fragment_phones" >
+        <action
+            android:id="@+id/action_phonesFragment_to_phoneDetailFragment"
+            app:destination="@id/phoneDetailFragment" />
+        <action
+            android:id="@+id/action_phonesFragment_to_newPhoneFragment"
+            app:destination="@id/newPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPhoneFragment"
+        android:name="com.guzman.telefonotracker.NewPhoneFragment"
+        android:label="fragment_new_phone"
+        tools:layout="@layout/fragment_new_phone" />
+    <fragment
+        android:id="@+id/phoneDetailFragment"
+        android:name="com.guzman.telefonotracker.PhoneDetailFragment"
+        android:label="fragment_phone_detail"
+        tools:layout="@layout/fragment_phone_detail" />
+</navigation>
