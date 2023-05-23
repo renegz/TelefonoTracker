@@ -42,6 +42,7 @@ class PhonesFragment : Fragment() {
 
     private fun addListeners(){
         binding.NavToNewPhoneFAB.setOnClickListener {
+            viewModel.clearData()
             findNavController().navigate(R.id.action_phonesFragment_to_newPhoneFragment)
         }
     }

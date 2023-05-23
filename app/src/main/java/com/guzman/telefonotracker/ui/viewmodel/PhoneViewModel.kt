@@ -29,6 +29,11 @@ class PhoneViewModel(private val repositoryTelefono: RepositoryTelefono): ViewMo
         Log.d("APP TAG", getPhones().toString())
     }
 
+    fun clearData(){
+        marca.value = ""
+        modelo.value = ""
+    }
+
     fun SetSelectedPhone(phone: TelefonoModel){
         marca.value = phone.marca
         modelo.value = phone.modelo
